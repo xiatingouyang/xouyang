@@ -11,21 +11,60 @@
 			body { 
     	    	font: 16px/1.5 "Palatino Linotype", Palatino, serif;
 	      	}
-	      	table {
-			    padding-left: 10%;
-			    padding-right: 10%;
-			    border-collapse: separate;
-			}
-			td {
-				padding: 70px;
-			}
+	      	
 			img.rounded-corners {
 			  border-radius: 30%;
 			}
 
-			.counter {
-				text-align: center;
-				color: white;
+
+			.column-left {
+			  float: left;
+			  width: 30%;
+			  padding-top: 5%;	
+			  padding-left: 15%;
+			}
+
+			.column-right {
+			  float: left;
+			  width: 70%;
+			  padding-top: 5%;
+			  padding-left: 10%;
+			  padding-right: 15%;
+			}
+
+			.row:after {
+			  padding-left:  10%;
+			  padding-top:  10%;
+			  padding-right:  10%;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			.two-col {
+			  display: inline;
+			}
+
+			.two-row {
+			  display: none;
+			}
+			@media screen and (max-width: 1200px) {
+			  .column-left {
+			    width: 100%;
+			  }
+
+			  .column-right {
+			    width: 100%;
+			    padding-left: 15%;
+			  }
+
+			  .two-col {
+			  	display: none;
+			  }
+
+			  .two-row {
+			  	display: inline;
+			  }
 			}
 		</style>
     </head>
@@ -34,12 +73,9 @@
 <body>
 <div>
 	
-
-<table>
-	<tr>
-	<td style="width:29%">
-	<div>
-		<img src="img/xouyang.jpg" width="240" class="rounded-corners"></img>
+<div class="row">
+  <div class="column-left">
+    <img src="img/xouyang.jpg" width="240" class="rounded-corners"></img>
 		<h2>Xiating Ouyang</h2>
 		<!-- (&#27431;&#38451;&#22799;&#27712;) -->
 		<h4>Ph.D. Student</h4>
@@ -49,13 +85,11 @@
 		<h4>My <a href="files/cv.pdf">CV</a></h4>
 		<br>
 		
-		<img src="img/seal.png" width="180" style="padding-left: 60"></img>
-</div>
-	</td>
-	
-	<td>
-	<div align="justify">
-		<h4>I am a Ph.D. student at the <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a> advised by Prof. <a href="http://pages.cs.wisc.edu/~paris/" target="_blank">Paris Koutris</a>. My research interest lies in the intersection of theoretical computer science and databases. Currently, I am working on efficient algorithms to compute the consistent query answers on databases that may violate the primary key constraint. 
+		<img src="img/seal.png" width="180" style="padding-left: 60;" class="two-col"></img>
+
+  </div>
+  <div class="column-right" align="justify">
+<h4>I am a Ph.D. student at the <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a> advised by Prof. <a href="http://pages.cs.wisc.edu/~paris/" target="_blank">Paris Koutris</a>. My research interest lies in the intersection of theoretical computer science and databases. Currently, I am working on efficient algorithms to compute the consistent query answers on databases that may violate the primary key constraint. 
 		<br><br>
 		Before that, I obtained my B.Sc. in computer science from the <a href="https://www.polyu.edu.hk" target="_blank">Hong Kong Polytechnic University (PolyU)</a> in 2018. I was fortunate to work with Prof. <a href="http://www4.comp.polyu.edu.hk/~csycao/" target="_blank">Yixin Cao</a> on graph theory and parameterized algorithms. I was an exchange student at the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a> in Winter 2017. 
 		</h4>
@@ -73,9 +107,9 @@
 		</li>
 		<li>
 		<p>
-		Unit interval vertex deletion: Fewer vertices are relevant.
+		Unit interval vertex deletion: Fewer vertices are relevant. [<a href="http://dx.doi.org/10.1016/j.jcss.2018.01.001" target="_blank">publisher</a>]
 		<br>&nbsp&nbsp&nbsp Yuping Ke, Yixin Cao, Xiating Ouyang, Wenjun Li and Jianxin Wang. 
-		<br>&nbsp&nbsp&nbsp <i>Journal of Computer and System Sciences</i>, 95:109&#8211;121 (2018). [<a href="http://dx.doi.org/10.1016/j.jcss.2018.01.001" target="_blank">publisher</a>]
+		<br>&nbsp&nbsp&nbsp <i>Journal of Computer and System Sciences</i>, 95:109&#8211;121 (2018).
 		</p>
 		</li>
 		</ul>
@@ -96,14 +130,11 @@
 		<li><p>Hong Kong SAR Government Scholarship</p></li>
 		</ul>
 		-->
-
-	</div>
-	</td>		
-	</tr>  
-</table>
-   
+  </div>
+</div>	 
 </div>
-	
-		
+
+<div style="padding-left: 8%"><img src="img/seal.png" width="180" style="padding-left: 60;" class="two-row"></img>	
+</div>		
 </body>
 </html>

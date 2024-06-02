@@ -15,6 +15,7 @@
 		<style>
 			li {
  				font-size:18px;
+ 				margin: 20px 0;
 			}
 			body { 
     	    	font: 16px/1.5 "Palatino Linotype", Palatino, serif;
@@ -25,6 +26,9 @@
 			}
 			a {
 				/*color: #C4012F;*/
+			}
+			ul {
+				list-style-type : none;
 			}
 
 			.paper-title{
@@ -106,21 +110,29 @@
 		<!-- <h4>University of Wisconsin&ndash;Madison</h4> -->
 		<h4>xouyang [shift + 2] cs.wisc.edu</h4>
 		<br>
-		
 		<img src="img/seal.png" width="180" style="padding-left: 60;" class="two-col"></img>
 
 </div>
 
 <div class="column-right" align="justify">
-<h4>I am a graduate from the UW-Madison <a href="https://database.cs.wisc.edu/" target="_blank">database group</a> and was very fortunately advised by Prof. <a href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paris Koutris</a>. I solve data management problems with principled guarantees and <a href="files/defense-slides.pdf" target="_blank">defended</a> my <a href="files/thesis.pdf" target="_blank">thesis</a> on some new results on consistent query answering (CQA). Before that, I worked with <a href="https://www4.comp.polyu.edu.hk/~csycao/" target="_blank">Prof. Yixin Cao</a> at HK PolyU on graph problems. 
+<h4>I graduated from the University of Wisconsin&ndash;Madison and was very fortunately advised by Prof. <a href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paris Koutris</a> at the <a href="https://database.cs.wisc.edu/" target="_blank">database group</a>. Before that, I worked with <a href="https://www4.comp.polyu.edu.hk/~csycao/" target="_blank">Prof. Yixin Cao</a> at the Hong Kong Polytechnic University on graph problems. 
 Currently, I am exploring opportunities at Meta.
 </h4>
+
+<h4>I solve data management problems with principled guarantees and <a href="files/defense-slides.pdf" target="_blank">defended</a> my <a href="files/thesis.pdf" target="_blank">thesis</a> on some new results on <a href="https://dl.acm.org/doi/10.1145/2699912" target="_blank">consistent query answering</a> (CQA). </h4>
 
 	
 <hr/>
 
-<h3>Publications <span class="h5">(* - alphabetical authorship following the convention of theoretical computer science)</span></h3>
+<h3>Publications <span class="h5">(* - alphabetical authorship following the convention of theoretical computer science; &#8224; - equal contribution)</span></h3>
 <ul>
+	<li>
+		<p>
+		<a class="paper-title" href="https://arxiv.org/abs/2303.04811" target="_blank">Naive Bayes Classifiers over Missing Data: Decision and Poisoning.</a>
+		<br><a class="author" href="https://waterpine.github.io/" target="_blank">Song Bian</a><sup>&#8224;</sup>, Xiating Ouyang<sup>&#8224;</sup>, Zhiwei Fan and <a class="author" href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paraschos Koutris</a>. 
+		<br><span class="conference">ICML'24</span> @ Vienna, Austria
+		</p>
+	</li>
 	<li>
 		<p>
 		<a class="paper-title" href="https://arxiv.org/abs/2310.19642" target="_blank">Consistent Query Answering for Primary Keys on Rooted Tree Queries.</a>
@@ -130,9 +142,9 @@ Currently, I am exploring opportunities at Meta.
 	</li>
 	<li>
 		<p>
-		<a class="paper-title" href="https://arxiv.org/abs/2310.05385" target="_blank">Conjunctive Queries with Negation and Aggregation: A Linear Time Characterization.</a> 
+		<a class="paper-title" href="https://arxiv.org/abs/2310.05385" target="_blank">Conjunctive Queries with Negation and Aggregation: A Linear Time Characterization.</a>
 		<br><a  class="author" href="https://pages.cs.wisc.edu/~hangdong/" target="_blank">Hangdong Zhao</a>, <a  class="author" href="https://austen-z-fan.github.io/" target="_blank">Austen Z. Fan</a>, Xiating Ouyang and <a  class="author" href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paraschos Koutris</a>.
-		<br><span class="conference">PODS'24</span> @ Santiago, Chile
+		<br><span class="conference">PODS'24</span> @ Santiago, Chile   [<a href="https://pages.cs.wisc.edu/~hangdong/slides/cqneg.pdf" target="_blank">slides</a>]
 		</p>
 	</li>
 	<li>
@@ -141,8 +153,7 @@ Currently, I am exploring opportunities at Meta.
 		LinCQA: Faster Consistent Query Answering with Linear Time Guarantees.
 		</a>
 		<br>* with Zhiwei Fan, <a  class="author" href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paraschos Koutris</a> and <a  class="author" href="http://informatique.umons.ac.be/staff/Wijsen.Jef/" target="_blank">Jef Wijsen</a>. 
-		<br><span class="conference">SIGMOD'23</span> @ <s>Seattle</s> Bellevue, WA
-		<br><a href="slides/lincqa-slides.pdf" target="_blank">slides</a> | <a href="files/lincqa-poster.pdf" target="_blank">poster</a>
+		<br><span class="conference">SIGMOD'23</span> @ <s>Seattle</s> Bellevue, WA   [<a href="slides/lincqa-slides.pdf" target="_blank">slides</a> | <a href="files/lincqa-poster.pdf" target="_blank">poster</a>]
 		</p>
 	</li>
 	<li>
@@ -154,10 +165,9 @@ Currently, I am exploring opportunities at Meta.
 	</li>
 	<li>
 		<p>
-		<a class="paper-title" href="https://arxiv.org/abs/2309.15270" target="_blank">Consistent Query Answering for Primary Keys on Path Queries.</a>
+		<a class="paper-title" href="https://arxiv.org/abs/2309.15270" target="_blank">Consistent Query Answering for Primary Keys on Path Queries.</a> 
 		<br>* with <a  class="author" href="https://pages.cs.wisc.edu/~paris/" target="_blank">Paraschos Koutris</a> and <a  class="author" href="http://informatique.umons.ac.be/staff/Wijsen.Jef/" target="_blank">Jef Wijsen</a>. 
-		<br><span class="conference">PODS'21</span> @ Xi'an, China
-		<br><a href="slides/cqa-path-slides.pdf" target="_blank">slides</a>
+		<br><span class="conference">PODS'21</span> @ Xi'an, China   [<a href="slides/cqa-path-slides.pdf" target="_blank">slides</a>]
 		</p>
 	</li>
 	<li>
@@ -172,7 +182,7 @@ Currently, I am exploring opportunities at Meta.
 <hr/>
 <h3>Services</h3>
 <ul>
-<li><p>Reviewer: PODS'24, TODS, DMTCS, LMCS</p></li>
+<li><p>Reviewer: ICALP'24, PODS'24, TODS, DMTCS, LMCS</p></li>
 <li><p>Organizer: <a href="https://database.cs.wisc.edu/seminar.html" target="_blank">UW-Madison DB Seminars</a>, <a href="https://www.facebook.com/PolyU.Exploring.HK/" target="_blank">Exploring Hong Kong Communities</a></p></li>
 <li><p>Volunteer: SIGMOD'23, VLDB'21, COCOON'17, SMARTCOMP'17</p></li>
 </ul>
@@ -188,13 +198,21 @@ Currently, I am exploring opportunities at Meta.
 <h3>Misc.</h3>
 <ul>
 <li><p>I am equally mediocre at swimming, biking, running, hiking, and badminton.</p></li>
-<li>(YouTube) Ideas to deal with <a href="https://youtu.be/W0-2HOwJpHk?si=TFeiujmfrYvU3Moe&t=195" target="_blank">rejections</a>, <a href="https://www.youtube.com/watch?v=05L0hOw2yVs&ab_channel=KarlKoscher" target="_blank">grad school</a>, <a href="https://www.youtube.com/watch?v=qP4XEZ54eSc" target="_blank">proof of Lemma 5.8</a>, <a href="https://www.youtube.com/watch?v=8GQZuzIdeQQ&ab_channel=TED" target="_blank">choices</a>, <a href="https://www.youtube.com/watch?v=x5pEDOrsBxw&list=RDx5pEDOrsBxw" target="_blank">Madison WI</a>, <a href="https://www.youtube.com/watch?v=_4doTqNghbE&ab_channel=VocoMasterKaraoke" target="_blank">&#x6642;&#x5149;&#x6D41;&#x901D;</a></li>
+<li>(YouTube) Ideas to deal with 
+<a href="https://youtu.be/W0-2HOwJpHk?si=TFeiujmfrYvU3Moe&t=195" target="_blank">rejections</a>, 
+<a href="https://www.youtube.com/watch?v=05L0hOw2yVs&ab_channel=KarlKoscher" target="_blank">grad school</a>, 
+<a href="https://www.youtube.com/watch?v=qP4XEZ54eSc" target="_blank">proof of Lemma 5.8</a>, 
+<a href="https://www.youtube.com/watch?v=BytUY_AwTUs" target="_blank">paper deadlines</a>,
+<a href="https://www.youtube.com/watch?v=8GQZuzIdeQQ&ab_channel=TED" target="_blank">choices</a>, 
+<a href="https://www.youtube.com/watch?v=x5pEDOrsBxw&list=RDx5pEDOrsBxw" target="_blank">Madison WI</a>, 
+<a href="https://www.youtube.com/watch?v=_4doTqNghbE&ab_channel=VocoMasterKaraoke" target="_blank">&#x6642;&#x5149;&#x6D41;&#x901D;</a>
+</li>
 </ul>
 
 <hr/>
 
 <br><br>
-<center><h5>Last updated on 2/22/2024 </h5></center>
+<center><h5>Last updated on 5/31/2024 </h5></center>
 </div>
 </div>	 
 </div>
